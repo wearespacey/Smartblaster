@@ -1,0 +1,14 @@
+D:\Smartblaster\SmartBlasterAPI\SmartBlasterAPI\bin\Debug\netcoreapp2.2\SmartBlasterAPI.deps.json
+D:\Smartblaster\SmartBlasterAPI\SmartBlasterAPI\bin\Debug\netcoreapp2.2\SmartBlasterAPI.runtimeconfig.json
+D:\Smartblaster\SmartBlasterAPI\SmartBlasterAPI\bin\Debug\netcoreapp2.2\SmartBlasterAPI.runtimeconfig.dev.json
+D:\Smartblaster\SmartBlasterAPI\SmartBlasterAPI\bin\Debug\netcoreapp2.2\SmartBlasterAPI.dll
+D:\Smartblaster\SmartBlasterAPI\SmartBlasterAPI\obj\Debug\netcoreapp2.2\SmartBlasterAPI.csprojAssemblyReference.cache
+D:\Smartblaster\SmartBlasterAPI\SmartBlasterAPI\obj\Debug\netcoreapp2.2\SmartBlasterAPI.csproj.CoreCompileInputs.cache
+D:\Smartblaster\SmartBlasterAPI\SmartBlasterAPI\obj\Debug\netcoreapp2.2\SmartBlasterAPI.RazorAssemblyInfo.cache
+D:\Smartblaster\SmartBlasterAPI\SmartBlasterAPI\obj\Debug\netcoreapp2.2\SmartBlasterAPI.RazorAssemblyInfo.cs
+D:\Smartblaster\SmartBlasterAPI\SmartBlasterAPI\obj\Debug\netcoreapp2.2\SmartBlasterAPI.AssemblyInfoInputs.cache
+D:\Smartblaster\SmartBlasterAPI\SmartBlasterAPI\obj\Debug\netcoreapp2.2\SmartBlasterAPI.AssemblyInfo.cs
+D:\Smartblaster\SmartBlasterAPI\SmartBlasterAPI\obj\Debug\netcoreapp2.2\SmartBlasterAPI.RazorTargetAssemblyInfo.cache
+D:\Smartblaster\SmartBlasterAPI\SmartBlasterAPI\bin\Debug\netcoreapp2.2\SmartBlasterAPI.pdb
+D:\Smartblaster\SmartBlasterAPI\SmartBlasterAPI\obj\Debug\netcoreapp2.2\SmartBlasterAPI.dll
+D:\Smartblaster\SmartBlasterAPI\SmartBlasterAPI\obj\Debug\netcoreapp2.2\SmartBlasterAPI.pdb
