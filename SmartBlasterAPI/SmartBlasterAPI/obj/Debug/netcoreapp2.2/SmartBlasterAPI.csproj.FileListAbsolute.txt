@@ -12,3 +12,17 @@ D:\Smartblaster\SmartBlasterAPI\SmartBlasterAPI\obj\Debug\netcoreapp2.2\SmartBla
 D:\Smartblaster\SmartBlasterAPI\SmartBlasterAPI\bin\Debug\netcoreapp2.2\SmartBlasterAPI.pdb
 D:\Smartblaster\SmartBlasterAPI\SmartBlasterAPI\obj\Debug\netcoreapp2.2\SmartBlasterAPI.dll
 D:\Smartblaster\SmartBlasterAPI\SmartBlasterAPI\obj\Debug\netcoreapp2.2\SmartBlasterAPI.pdb
+C:\Users\wwe\Documents\SpaceOffice\SmartBlasterUI\SmartBlasterAPI\SmartBlasterAPI\bin\Debug\netcoreapp2.2\SmartBlasterAPI.deps.json
+C:\Users\wwe\Documents\SpaceOffice\SmartBlasterUI\SmartBlasterAPI\SmartBlasterAPI\bin\Debug\netcoreapp2.2\SmartBlasterAPI.runtimeconfig.json
+C:\Users\wwe\Documents\SpaceOffice\SmartBlasterUI\SmartBlasterAPI\SmartBlasterAPI\bin\Debug\netcoreapp2.2\SmartBlasterAPI.runtimeconfig.dev.json
+C:\Users\wwe\Documents\SpaceOffice\SmartBlasterUI\SmartBlasterAPI\SmartBlasterAPI\bin\Debug\netcoreapp2.2\SmartBlasterAPI.dll
+C:\Users\wwe\Documents\SpaceOffice\SmartBlasterUI\SmartBlasterAPI\SmartBlasterAPI\bin\Debug\netcoreapp2.2\SmartBlasterAPI.pdb
+C:\Users\wwe\Documents\SpaceOffice\SmartBlasterUI\SmartBlasterAPI\SmartBlasterAPI\obj\Debug\netcoreapp2.2\SmartBlasterAPI.csprojAssemblyReference.cache
+C:\Users\wwe\Documents\SpaceOffice\SmartBlasterUI\SmartBlasterAPI\SmartBlasterAPI\obj\Debug\netcoreapp2.2\SmartBlasterAPI.csproj.CoreCompileInputs.cache
+C:\Users\wwe\Documents\SpaceOffice\SmartBlasterUI\SmartBlasterAPI\SmartBlasterAPI\obj\Debug\netcoreapp2.2\SmartBlasterAPI.RazorAssemblyInfo.cache
+C:\Users\wwe\Documents\SpaceOffice\SmartBlasterUI\SmartBlasterAPI\SmartBlasterAPI\obj\Debug\netcoreapp2.2\SmartBlasterAPI.RazorAssemblyInfo.cs
+C:\Users\wwe\Documents\SpaceOffice\SmartBlasterUI\SmartBlasterAPI\SmartBlasterAPI\obj\Debug\netcoreapp2.2\SmartBlasterAPI.AssemblyInfoInputs.cache
+C:\Users\wwe\Documents\SpaceOffice\SmartBlasterUI\SmartBlasterAPI\SmartBlasterAPI\obj\Debug\netcoreapp2.2\SmartBlasterAPI.AssemblyInfo.cs
+C:\Users\wwe\Documents\SpaceOffice\SmartBlasterUI\SmartBlasterAPI\SmartBlasterAPI\obj\Debug\netcoreapp2.2\SmartBlasterAPI.RazorTargetAssemblyInfo.cache
+C:\Users\wwe\Documents\SpaceOffice\SmartBlasterUI\SmartBlasterAPI\SmartBlasterAPI\obj\Debug\netcoreapp2.2\SmartBlasterAPI.dll
+C:\Users\wwe\Documents\SpaceOffice\SmartBlasterUI\SmartBlasterAPI\SmartBlasterAPI\obj\Debug\netcoreapp2.2\SmartBlasterAPI.pdb
