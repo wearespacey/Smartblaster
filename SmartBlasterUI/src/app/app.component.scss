@@ -12,17 +12,6 @@
   overflow-y: auto !important;
 }
 
-.btn-group-wrap {
-  text-align: center;
-}
-
-div.btn-group {
-  margin: 0 auto;
-  text-align: center;
-  width: inherit;
-  display: inline-block;
-}
-
 .developer {
   width: 125px;
   margin: 3px;
@@ -42,8 +31,16 @@ div.btn-group {
   right: 0;
 }
 
+#arrows {
+  position: absolute;
+  width: auto;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(10, 10, 10, 0.2);
+}
+
 @media all and (max-width: 767px) {
   #camera {
-    width: 100%;
+    max-width: 100%;
   }
 }

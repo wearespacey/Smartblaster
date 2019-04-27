@@ -7,30 +7,30 @@
         Détecte et colmate vos brèches rapidement
       </h1>
     </div>
-    <div class="col-12 col-md-8 mx-auto my-5 py-5 animated fadeInUp" style="background-color: rgba(10, 10, 10, 0.2)">
+    <div class="col-12 col-md-6 mx-auto my-5 p-0 animated fadeIn">
       <!-- ROVER CAMERA -->
-      <div class="col-12 m-0 p-0 mb-4 d-flex align-items-center" style="height: 435px;">
+      <div class="col-12 m-0 p-0 mb-4 d-flex align-items-center" style="height: 630px;">
         <div class="mx-auto text-center">
           <div class="spinner-border text-light mx-auto" style="width: 3rem; height: 3rem;" role="status">
             <span class="sr-only">Loading...</span>
           </div>
           <p class="text-light mt-2">Camera is loading...</p>
         </div>
-        <img src="http://10.100.2.233:8080/?action=stream" id="camera" class="mx-auto position-absolute mx-auto">
+        <img src="http://10.100.2.233:8080/?action=stream" id="camera" class="mx-auto position-absolute mx-auto rounded" style="height: 630px; width: 100%">
       </div>
       <!-- ARROWS TO CONTROL THE ROVER -->
-      <div id="arrows" class="col-12">
+      <div id="arrows" class="col-12 p-3 mx-auto rounded">
         <div class="col-12 text-center">
           <button
                   (mousedown)="btnClicked('F', null)"
                   (mouseup)="btnClicked(null, null)"
-                  class="btn btn btn-light"
+                  class="btn btn-sm btn-light"
                   style="border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;"
           >
             <i class="fas fa-arrow-up"></i>
           </button>
         </div>
-        <div class="btn-group btn-group">
+        <div class="btn-group btn-group-sm">
           <button
                   (mousedown)="btnClicked(null, 'L')"
                   (mouseup)="btnClicked(null, null)"
@@ -38,7 +38,7 @@
           >
             <i class="fas fa-arrow-left"></i>
           </button>
-          <button class="btn btn-light" (click)="onOffClicked()">
+          <button class="btn btn-sm btn-light" (click)="onOffClicked()">
             <i class="fas fa-power-off"></i>
           </button>
           <button
@@ -53,7 +53,7 @@
           <button
                   (mousedown)="btnClicked('B', null)"
                   (mouseup)="btnClicked(null, null)"
-                  class="btn btn btn-light"
+                  class="btn btn-sm btn-light"
                   style="border-top-left-radius: 0px; border-top-right-radius: 0px;"
           >
             <i class="fas fa-arrow-down"></i>
