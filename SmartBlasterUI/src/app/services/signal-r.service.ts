@@ -28,9 +28,15 @@ export class SignalRService {
     });
   }
 
-  public broadcastChartData = (movemment: MovementModel) => {
+  public broadcastMovementData = (movemment: MovementModel) => {
     this.hubConnection
       .invoke('broadcastmovementdata', movemment)
+      .catch(err => console.error(err));
+  }
+
+  public broadcastStop = () => {
+    this.hubConnection
+      .invoke('broadcaststop', null)
       .catch(err => console.error(err));
   }
 

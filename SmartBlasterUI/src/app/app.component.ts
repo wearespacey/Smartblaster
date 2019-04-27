@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import ParticlesConfig from './../assets/data/particles.json';
 import { HttpClient } from '@angular/common/http';
 import { SignalRService } from './services/signal-r.service';
@@ -15,19 +15,22 @@ export class AppComponent implements OnInit {
     particlesJS('particles-js', ParticlesConfig, () => {
       console.log('callback - particles.js config loaded');
     });
+    this.signalRService.startConnection();
   }
+
   constructor(
     public signalRService: SignalRService,
     private http: HttpClient
   ) {}
-  ngOnInit() {
-    this.signalRService.startConnection();
-  }
-  public chartClicked = event => {
-    console.log(event);
-    this.signalRService.broadcastChartData({
-      ForwarBackward: 'F',
-      RightLeft: null
+
+  public btnClicked = (FBDirection: string, RLDirection: string) => {
+    this.signalRService.broadcastMovementData({
+      ForwarBackward: FBDirection,
+      RightLeft: RLDirection
     });
+  };
+
+  public onOffClicked = () => {
+    this.signalRService.broadcastStop();
   };
 }

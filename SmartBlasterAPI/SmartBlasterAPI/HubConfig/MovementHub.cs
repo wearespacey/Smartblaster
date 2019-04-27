@@ -12,7 +12,13 @@ namespace SmartBlasterAPI.HubConfig
         public async Task BroadcastMovementData(MovementModel data)
         {
             await Clients.All.SendAsync("broadcastmovementdata", data);
-            Debug.WriteLine("Yes");
+            Debug.WriteLine(data.ForwarBackward + " / " + data.RightLeft);
+        } 
+
+        public async Task BroadcastStop(string data)
+        {
+            await Clients.All.SendAsync("broadcaststop", data);
+            Debug.WriteLine("STOP");
         } 
     }
 }
