@@ -10,32 +10,32 @@ namespace SmartBlasterAPI.Controllers
     [ApiController]
     public class MovementController : ControllerBase
     {
-        [HttpGet("TurnLeft")]
-        public async Task<IActionResult> Left()
+        [HttpGet("TurnLeft/{intensity}")]
+        public async Task<IActionResult> Left(byte intensity)
         {
             
 
             return Ok();
         }
 
-        [HttpGet("TurnRight")]
-        public async Task<IActionResult> Right()
+        [HttpGet("TurnRight/{intensity}")]
+        public async Task<IActionResult> Right(byte intensity)
         {
 
 
             return Ok();
         }
 
-        [HttpGet("GoForward")]
-        public async Task<IActionResult> MoveForward()
+        [HttpGet("GoForward/{intensity}")]
+        public async Task<IActionResult> MoveForward(byte intensity)
         {
 
 
             return Ok();
         }
 
-        [HttpGet("GoBackward")]
-        public async Task<IActionResult> MoveBackward()
+        [HttpGet("GoBackward/{intensity}")]
+        public async Task<IActionResult> MoveBackward(byte intensity)
         {
 
 
