@@ -8289,7 +8289,7 @@
       ]
     },
     "runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
-      "sha512": "X7IdhILzr4ROXd8mI1BUCQMSHSQwelUlBjF1JyTKCjXaOGn2fB4EKBxQbCK2VjO3WaWIdlXZL3W6TiIVnrhX4g==",
+      "sha512": "/p8IQT2brFMDa7BHMH71LV+w5Tb3OxoLHxhn6+MGqN5xeqhM2HRHmj+7xQGJnaRn73d7ZTvp6yRCFMvolws4wA==",
       "type": "package",
       "path": "runtime.osx.10.10-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
       "files": [
@@ -8315,7 +8315,7 @@
       ]
     },
     "runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
-      "sha512": "ytoewC6wGorL7KoCAvRfsgoJPJbNq+64k2SqW6JcOAebWsFUvCCYgfzQMrnpvPiEl4OrblUlhF2ji+Q1+SVLrQ==",
+      "sha512": "JGc0pAWRE8lB4Ucygk2pYSKbUPLlAIq6Bczf5/WF2D/VKJEPtYlVUMxk8fbl1zRfTWzSHi+VcFZlaPlWiNxeKg==",
       "type": "package",
       "path": "runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
       "files": [
@@ -8677,7 +8677,7 @@
       ]
     },
     "System.Collections.Specialized/4.3.0": {
-      "sha512": "Epx8PoVZR0iuOnJJDzp7pWvdfMMOAvpUo95pC4ScH2mJuXkKA2Y4aR3cG9qt2klHgSons1WFh4kcGW7cSXvrxg==",
+      "sha512": "NoPBj0ykejqAWW4p4gGtrrL+3c84ZLSvGnHgq422ew1Rj4WKj1FA8/BCybqC111EtgcqUl6ZJNFYYS22HLgbjA==",
       "type": "package",
       "path": "system.collections.specialized/4.3.0",
       "files": [
@@ -12956,23 +12956,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\wwe\\.nuget\\packages\\": {},
+    "C:\\Users\\chris\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\wwe\\Documents\\SpaceOffice\\SmartBlasterUI\\SmartBlasterAPI\\SmartBlasterAPI\\SmartBlasterAPI.csproj",
+      "projectUniqueName": "D:\\Programmes\\Smartblaster\\SmartBlasterAPI\\SmartBlasterAPI\\SmartBlasterAPI.csproj",
       "projectName": "SmartBlasterAPI",
-      "projectPath": "C:\\Users\\wwe\\Documents\\SpaceOffice\\SmartBlasterUI\\SmartBlasterAPI\\SmartBlasterAPI\\SmartBlasterAPI.csproj",
-      "packagesPath": "C:\\Users\\wwe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\wwe\\Documents\\SpaceOffice\\SmartBlasterUI\\SmartBlasterAPI\\SmartBlasterAPI\\obj\\",
+      "projectPath": "D:\\Programmes\\Smartblaster\\SmartBlasterAPI\\SmartBlasterAPI\\SmartBlasterAPI.csproj",
+      "packagesPath": "C:\\Users\\chris\\.nuget\\packages\\",
+      "outputPath": "D:\\Programmes\\Smartblaster\\SmartBlasterAPI\\SmartBlasterAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\wwe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\chris\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -12980,7 +12980,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "http://svnsitfs02:81/nuget/nsi/": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -13036,7 +13035,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'WebSocketSharp 1.0.3-rc11' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.2'. This package may not be fully compatible with your project.",
+      "message": "Le package 'WebSocketSharp 1.0.3-rc11' a été restauré en utilisant '.NETFramework,Version=v4.6.1' au lieu du framework cible du projet '.NETCoreApp,Version=v2.2'. Ce package n'est peut-être pas totalement compatible avec votre projet.",
       "libraryId": "WebSocketSharp",
       "targetGraphs": [
         ".NETCoreApp,Version=v2.2"

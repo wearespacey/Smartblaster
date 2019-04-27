@@ -23,24 +23,24 @@
   transform: scale(1.03);
 }
 
-#camera {
-  height: 435px;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
+#faceDetection {
+  overflow: hidden;
 }
 
-#arrows {
-  position: absolute;
-  width: auto;
-  bottom: 20px;
-  right: 20px;
-  background-color: rgba(10, 10, 10, 0.2);
+.door-left {
+  height: 600px;
+  background-color: white;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-image: linear-gradient(135deg, #3f3f40 25%, #ffe100 25%, #ffe100 50%, #3f3f40 50%, #3f3f40 75%, #ffe100 75%, #ffe100 100%);
+  background-size: 56.57px 56.57px;
 }
 
-@media all and (max-width: 767px) {
-  #camera {
-    max-width: 100%;
-  }
+.door-right {
+  height: 600px;
+  background-color: white;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-image: linear-gradient(45deg, #ffe100 25%, #3f3f40 25%, #3f3f40 50%, #ffe100 50%, #ffe100 75%, #3f3f40 75%, #3f3f40 100%);
+  background-size: 56.57px 56.57px;
 }

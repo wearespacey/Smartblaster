@@ -7,19 +7,50 @@ import {
   HttpResponse
 } from '@angular/common/http';
 import { SignalRService } from './services/signal-r.service';
-import { Observable as __Observable } from 'rxjs';
 import { map as __map, filter as __filter } from 'rxjs/operators';
 import { StrictHttpResponse as __StrictHttpResponse } from '../strict-http-response';
+import { trigger, style, animate, transition } from '@angular/animations'
 
 declare var particlesJS: any;
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  animations: [
+    trigger('slideOutToLeft', [
+      transition('void => *', [
+        // 'From' Style
+        style({ transform: 'translateX(0%)' }),
+        animate('1500ms ease-in',
+            // 'To' Style
+            style({ transform: 'translateX(-100%)' }),
+        )
+      ])
+    ]),
+    trigger('slideOutToRight', [
+      transition('void => *', [
+        // 'From' Style
+        style({ transform: 'translateX(0%)' }),
+        animate('1500ms ease-in',
+            // 'To' Style
+            style({ transform: 'translateX(100%)' }),
+        )
+      ])
+    ]),
+  ]
 })
 export class AppComponent implements OnInit {
+  loaderMessage: any;
+  isAnimating: boolean;
+
+
   ngOnInit() {
+    this.loaderMessage = 'Détection de votre identité...';
+    this.isAnimating = true;
+    setTimeout(() => {
+      this.isAnimating = false;
+    }, 1500);
     particlesJS('particles-js', ParticlesConfig, () => {
       console.log('callback - particles.js config loaded');
     });
@@ -32,16 +63,6 @@ export class AppComponent implements OnInit {
     private http: HttpClient
   ) {}
 
-  public btnClicked = (FBDirection: string, RLDirection: string) => {
-    this.signalRService.broadcastMovementData({
-      ForwarBackward: FBDirection,
-      RightLeft: RLDirection
-    });
-  }
-
-  public onOffClicked = () => {
-    this.signalRService.broadcastStop();
-  }
   // http://10.100.2.163:6500/api/Cam/snap
   callCam() {
     const __headers = new HttpHeaders();
