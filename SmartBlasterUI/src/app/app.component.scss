@@ -7,11 +7,9 @@
 }
 
 .fullpage {
-  position: fixed !important;
   width: 100% !important;
   min-height: 100vh !important;
-  max-height: 100vh !important;
-  overflow-y: hidden !important;
+  overflow-y: auto !important;
 }
 
 .btn-group-wrap {
@@ -26,7 +24,7 @@ div.btn-group {
 }
 
 .developer {
-  width: 90px;
+  width: 125px;
   margin: 3px;
   transform: scale(1);
   transition: .1s all .1s;
@@ -34,4 +32,18 @@ div.btn-group {
 
 .developer:hover {
   transform: scale(1.03);
+}
+
+#camera {
+  height: 435px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+@media all and (max-width: 767px) {
+  #camera {
+    width: 100%;
+  }
 }

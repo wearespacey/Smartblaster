@@ -26,3 +26,17 @@ C:\Users\wwe\Documents\SpaceOffice\SmartBlasterUI\SmartBlasterAPI\SmartBlasterAP
 C:\Users\wwe\Documents\SpaceOffice\SmartBlasterUI\SmartBlasterAPI\SmartBlasterAPI\obj\Debug\netcoreapp2.2\SmartBlasterAPI.RazorTargetAssemblyInfo.cache
 C:\Users\wwe\Documents\SpaceOffice\SmartBlasterUI\SmartBlasterAPI\SmartBlasterAPI\obj\Debug\netcoreapp2.2\SmartBlasterAPI.dll
 C:\Users\wwe\Documents\SpaceOffice\SmartBlasterUI\SmartBlasterAPI\SmartBlasterAPI\obj\Debug\netcoreapp2.2\SmartBlasterAPI.pdb
+D:\Programmes\Smartblaster\SmartBlasterAPI\SmartBlasterAPI\bin\Debug\netcoreapp2.2\SmartBlasterAPI.deps.json
+D:\Programmes\Smartblaster\SmartBlasterAPI\SmartBlasterAPI\bin\Debug\netcoreapp2.2\SmartBlasterAPI.runtimeconfig.json
+D:\Programmes\Smartblaster\SmartBlasterAPI\SmartBlasterAPI\bin\Debug\netcoreapp2.2\SmartBlasterAPI.runtimeconfig.dev.json
+D:\Programmes\Smartblaster\SmartBlasterAPI\SmartBlasterAPI\bin\Debug\netcoreapp2.2\SmartBlasterAPI.dll
+D:\Programmes\Smartblaster\SmartBlasterAPI\SmartBlasterAPI\bin\Debug\netcoreapp2.2\SmartBlasterAPI.pdb
+D:\Programmes\Smartblaster\SmartBlasterAPI\SmartBlasterAPI\obj\Debug\netcoreapp2.2\SmartBlasterAPI.csprojAssemblyReference.cache
+D:\Programmes\Smartblaster\SmartBlasterAPI\SmartBlasterAPI\obj\Debug\netcoreapp2.2\SmartBlasterAPI.csproj.CoreCompileInputs.cache
+D:\Programmes\Smartblaster\SmartBlasterAPI\SmartBlasterAPI\obj\Debug\netcoreapp2.2\SmartBlasterAPI.RazorAssemblyInfo.cache
+D:\Programmes\Smartblaster\SmartBlasterAPI\SmartBlasterAPI\obj\Debug\netcoreapp2.2\SmartBlasterAPI.RazorAssemblyInfo.cs
+D:\Programmes\Smartblaster\SmartBlasterAPI\SmartBlasterAPI\obj\Debug\netcoreapp2.2\SmartBlasterAPI.AssemblyInfoInputs.cache
+D:\Programmes\Smartblaster\SmartBlasterAPI\SmartBlasterAPI\obj\Debug\netcoreapp2.2\SmartBlasterAPI.AssemblyInfo.cs
+D:\Programmes\Smartblaster\SmartBlasterAPI\SmartBlasterAPI\obj\Debug\netcoreapp2.2\SmartBlasterAPI.RazorTargetAssemblyInfo.cache
+D:\Programmes\Smartblaster\SmartBlasterAPI\SmartBlasterAPI\obj\Debug\netcoreapp2.2\SmartBlasterAPI.dll
+D:\Programmes\Smartblaster\SmartBlasterAPI\SmartBlasterAPI\obj\Debug\netcoreapp2.2\SmartBlasterAPI.pdb
