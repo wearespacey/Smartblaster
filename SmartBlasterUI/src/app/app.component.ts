@@ -12,6 +12,7 @@ import { StrictHttpResponse as __StrictHttpResponse } from '../strict-http-respo
 import { trigger, style, animate, transition } from '@angular/animations';
 import {Subject} from 'rxjs';
 import {WebcamImage} from 'ngx-webcam';
+import {CustomVisionPredictionService} from '@oneroomic/facecognitivelibrary';
 
 declare var particlesJS: any;
 
@@ -49,7 +50,8 @@ export class AppComponent implements OnInit {
 
   constructor(
     public signalRService: SignalRService,
-    private http: HttpClient
+    private http: HttpClient,
+    private faceService: CustomVisionPredictionService
   ) {}
 
   ngOnInit() {
@@ -59,7 +61,7 @@ export class AppComponent implements OnInit {
       this.isAnimating = false;
       setInterval(() => {
         this.takeSnapshot();
-      }, 500);
+      }, 2000);
     }, 1500);
     particlesJS('particles-js', ParticlesConfig, () => {
       console.log('callback - particles.js config loaded');
@@ -71,9 +73,32 @@ export class AppComponent implements OnInit {
     this.triggerSnapshot.next();
   }
 
-  capturedImage(event: WebcamImage) {
+  async capturedImage(event: WebcamImage) {
+    //TODO  hardcoded keys
+    const predictions = await this.faceService.predictImage(this.b64toBlob(event.imageAsBase64), endpoint, key).toPromise();
+    console.log(predictions);
   }
 
+  b64toBlob(b64Data: string, contentType = '', sliceSize = 512) {
+    const byteCharacters = atob(b64Data);
+    const byteArrays = [];
+
+    for (let offset = 0; offset < byteCharacters.length; offset += sliceSize) {
+      const slice = byteCharacters.slice(offset, offset + sliceSize);
+
+      const byteNumbers = new Array(slice.length);
+      for (let i = 0; i < slice.length; i++) {
+        byteNumbers[i] = slice.charCodeAt(i);
+      }
+
+      const byteArray = new Uint8Array(byteNumbers);
+
+      byteArrays.push(byteArray);
+    }
+
+    const blob = new Blob(byteArrays, { type: contentType });
+    return blob;
+  }
   // http://10.100.2.163:6500/api/Cam/snap
   callCam() {
     const __headers = new HttpHeaders();
