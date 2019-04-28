@@ -9,7 +9,9 @@ import {
 import { SignalRService } from './services/signal-r.service';
 import { map as __map, filter as __filter } from 'rxjs/operators';
 import { StrictHttpResponse as __StrictHttpResponse } from '../strict-http-response';
-import { trigger, style, animate, transition } from '@angular/animations'
+import { trigger, style, animate, transition } from '@angular/animations';
+import {Subject} from 'rxjs';
+import {WebcamImage} from 'ngx-webcam';
 
 declare var particlesJS: any;
 
@@ -41,27 +43,36 @@ declare var particlesJS: any;
   ]
 })
 export class AppComponent implements OnInit {
+  triggerSnapshot: Subject<void> = new Subject<void>();
   loaderMessage: any;
   isAnimating: boolean;
 
+  constructor(
+    public signalRService: SignalRService,
+    private http: HttpClient
+  ) {}
 
   ngOnInit() {
     this.loaderMessage = 'Détection de votre identité...';
     this.isAnimating = true;
     setTimeout(() => {
       this.isAnimating = false;
+      setInterval(() => {
+        this.takeSnapshot();
+      }, 500);
     }, 1500);
     particlesJS('particles-js', ParticlesConfig, () => {
       console.log('callback - particles.js config loaded');
     });
-    this.signalRService.startConnection();
-    this.callCam().toPromise();
+    // this.signalRService.startConnection();
   }
 
-  constructor(
-    public signalRService: SignalRService,
-    private http: HttpClient
-  ) {}
+  takeSnapshot() {
+    this.triggerSnapshot.next();
+  }
+
+  capturedImage(event: WebcamImage) {
+  }
 
   // http://10.100.2.163:6500/api/Cam/snap
   callCam() {

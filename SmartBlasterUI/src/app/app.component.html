@@ -22,7 +22,7 @@
           </div>
         </div>
         <!-- WEBCAM -->
-        <webcam id="camera" class="position-absolute w-100 text-center" width="799" height="597" style="top: 0; z-index: 2"></webcam>
+        <webcam (imageCapture)="capturedImage($event)" [trigger]="triggerSnapshot" id="camera" class="position-absolute w-100 text-center" width="799" height="597" style="top: 0; z-index: 2"></webcam>
         <!-- OLD TV STYLE -->
         <img src="https://media3.giphy.com/media/riw3K0D2h4klG/giphy.gif" class="position-absolute" style="height: 600px; width: 800px; z-index: 1;">
       </div>
