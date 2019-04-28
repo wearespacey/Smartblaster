@@ -74,6 +74,14 @@ export class AppComponent implements OnInit {
       this.isAnimating = false;
       this.interval = setInterval(() => {
         this.takeSnapshot();
+        /* Result */
+        if (this.isHuman === true) {
+          this.loaderMessage = 'Accès autorisé, vous êtes un humain.';
+        } else if (this.isHuman === false) {
+          this.loaderMessage = 'Accès interdit, vous êtes un alien.';
+        } else {
+          this.loaderMessage = 'Détection de votre identité...';
+        }
       }, 1000);
     }, 1500);
     particlesJS('particles-js', ParticlesConfig, () => {
