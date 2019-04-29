@@ -1,0 +1,51 @@
+<div id="particles-js"></div>
+<div class="fullpage d-flex align-items-center py-3">
+  <div class="col-12 p-0 m-0">
+    <div id="header" class="col-12 m-0 p-0 animated fadeInDown">
+      <h1 class="display-2 text-center text-white">Smart Detect</h1>
+      <h1 class="h5 text-center text-white text-uppercase">
+        Ne laisse pas entrer les martiens
+      </h1>
+    </div>
+    <div class="col-12 col-md-6 mx-auto my-5 p-0 animated fadeIn">
+      <!-- ROVER CAMERA -->
+      <div id="faceDetection" class="col-12 m-0 p-0 mb-4 mx-auto d-flex align-items-center rounded border" style="height: 600px; width: 800px; background-color: rgba(10, 10, 10, 0.2);">
+        <div *ngIf="isAnimating == true" id="door-left" class="col door-left" @slideOutToLeft style="z-index: 4"></div>
+        <div *ngIf="isAnimating == true" id="door-right" class="col door-right" @slideOutToRight style="z-index: 4"></div>
+        <!-- DETECTION -->
+        <div *ngIf="isAnimating == false" id="loar" class="text-center d-flex align-items-end" style="height: 600px; width: 800px; z-index: 3;">
+          <div class="col-12 text-center pb-3">
+            <div *ngIf="isHuman === undefined" class="spinner-border text-light h2" role="status">
+              <span class="sr-only">Loading...</span>
+            </div>
+            <div *ngIf="isHuman !== undefined && !isHuman">
+              <h1 class="h1 text-light"><i class="fas fa-times-circle"></i></h1>
+            </div>
+            <div *ngIf="isHuman !== undefined && isHuman">
+              <h1 class="h1 text-light"><i class="fas fa-check-circle"></i></h1>
+            </div>
+            <h1 class="p-0 m-0 text-light h5">{{ loaderMessage }}</h1>
+          </div>
+        </div>
+        <!-- WEBCAM -->
+        <webcam (imageCapture)="capturedImage($event)" [trigger]="triggerSnapshot" id="camera" class="position-absolute w-100 text-center" width="799" height="597" style="top: 0; z-index: 2"></webcam>
+        <!-- OLD TV STYLE -->
+        <img src="https://media3.giphy.com/media/riw3K0D2h4klG/giphy.gif" class="position-absolute" style="height: 600px; width: 800px; z-index: 1;">
+      </div>
+    </div>
+    <!-- LIST OF DEVELOPERS -->
+    <div id="developers" class="col-12 text-center mt-5">
+      <h1 class="h4 text-light mb-3 text-center animated fadeInUp">
+        Développeurs
+      </h1>
+      <div class="animated fadeInUp">
+        <img src="../assets/img/christopher.png" class="developer" />
+        <img src="../assets/img/wilson.png" class="developer" />
+        <img src="../assets/img/sylvain.png" class="developer" />
+        <img src="../assets/img/xavier.png" class="developer" />
+        <img src="../assets/img/simon.png" class="developer" />
+        <img src="../assets/img/pierre.png" class="developer" />
+      </div>
+    </div>
+  </div>
+</div>

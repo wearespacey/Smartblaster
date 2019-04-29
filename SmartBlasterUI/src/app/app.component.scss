@@ -1,0 +1,46 @@
+#particles-js {
+  position: fixed !important;
+  width: 100% !important;
+  min-height: 100vh !important;
+  overflow-y: auto !important;
+  background-color: #232741;
+}
+
+.fullpage {
+  width: 100% !important;
+  min-height: 100vh !important;
+  overflow-y: auto !important;
+}
+
+.developer {
+  width: 125px;
+  margin: 3px;
+  transform: scale(1);
+  transition: .1s all .1s;
+}
+
+.developer:hover {
+  transform: scale(1.03);
+}
+
+#faceDetection {
+  overflow: hidden;
+}
+
+.door-left {
+  height: 600px;
+  background-color: white;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-image: linear-gradient(135deg, #3f3f40 25%, #ffe100 25%, #ffe100 50%, #3f3f40 50%, #3f3f40 75%, #ffe100 75%, #ffe100 100%);
+  background-size: 56.57px 56.57px;
+}
+
+.door-right {
+  height: 600px;
+  background-color: white;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-image: linear-gradient(45deg, #ffe100 25%, #3f3f40 25%, #3f3f40 50%, #ffe100 50%, #ffe100 75%, #3f3f40 75%, #3f3f40 100%);
+  background-size: 56.57px 56.57px;
+}
