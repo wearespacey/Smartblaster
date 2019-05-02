@@ -1,1 +1,1 @@
-# Smartblaster
+# Smart~Blaster~Detect
